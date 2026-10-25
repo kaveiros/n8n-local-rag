@@ -1,0 +1,9 @@
+.env
+*.env
+.DS_Store
+node_modules/
+# Local documents to be ingested
+data/*
+!data/README.txt
+# n8n exports with credentials
+*credentials*.json
