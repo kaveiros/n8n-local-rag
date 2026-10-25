@@ -4,6 +4,8 @@ A fully local Retrieval-Augmented Generation workflow for [n8n](https://n8n.io).
 
 No cloud APIs: chat and embeddings both run on [Ollama](https://ollama.com).
 
+**[Live preview of the workflow](https://kaveiros.github.io/n8n-local-rag/)** (interactive canvas, GitHub Pages)
+
 ## Architecture
 
 ```
@@ -105,6 +107,8 @@ Open the **When chat message received** node and use the chat panel, or activate
 ├── README.md
 ├── workflows/rag.json   # n8n workflow (no credentials)
 ├── sql/init.sql         # documents table + indexes
+├── docs/index.html      # GitHub Pages preview (generated)
+├── scripts/build_pages.py  # regenerates docs/index.html from the workflow
 ├── data/                # local files to ingest (git-ignored)
 └── .gitignore
 ```
